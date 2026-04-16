@@ -1,18 +1,3 @@
-"""
-Simulacion Cibernetica Animada: Dinamica de Discusion de Pareja
-===============================================================
-Version terminal — muestra el proceso turno a turno en tiempo real
-con graficas animadas usando matplotlib.
-
-Uso:
-    python simulacion_animada.py                  # parametros por defecto
-    python simulacion_animada.py --velocidad 0.3  # mas lento
-    python simulacion_animada.py --escenario 2    # escenario predefinido (1-6)
-    python simulacion_animada.py --ayuda
-
-Universidad Sergio Arboleda — Analisis Cibernetico
-"""
-
 import argparse
 import random
 import sys
@@ -540,8 +525,8 @@ def main():
         nombre = f"Personalizado | Umbral A:{th_a} B:{th_b} | React A:{re_a} B:{re_b}"
 
     print(f"\n  Iniciando simulacion: {nombre}")
-    print(f"  Umbral A:{th_a}  B:{th_b} | Reactividad A:{re_a}  B:{re_b}"
-          f" | Calma A:{cal_a}  B:{cal_b}")
+    print(f"  Umbral Persona A:{th_a}  Persona B:{th_b} | Reactividad Persona A:{re_a}  Persona B:{re_b}"
+          f" | Calma Persona A:{cal_a}  Persona B:{cal_b}")
     print(f"  Estres:{estres} | Terceros:{terceros} | Trigger:{trigger}"
           f" | Velocidad:{args.velocidad}s\n")
 
